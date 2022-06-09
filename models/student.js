@@ -6,4 +6,17 @@ module.exports.createStudent = async ({ firstname, lastname, campus }) => {
   });
 };
 
-module.exports.getStudents = () => db.student.findMany();
+module.exports.getStudents = () =>
+  db.student.findMany({
+    orderBy: {
+      lastname: "asc",
+    },
+  });
+
+module.exports.deleteOneStudent = (id) => {
+  return db.student.delete({
+    where: {
+      id,
+    },
+  });
+};

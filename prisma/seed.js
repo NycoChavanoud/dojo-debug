@@ -2,13 +2,6 @@ const db = require("../lib/prisma");
 
 async function seed() {
   await db.student.deleteMany();
-  await db.student.create({
-    data: {
-      firstname: "Hello",
-      lastname: "World",
-      campus: "Lyon",
-    },
-  });
   await db.student.createMany({
     data: [
       {
@@ -92,8 +85,8 @@ async function seed() {
         campus: "Lyon",
       },
       {
-        firstname: "Mahamat",
-        lastname: "Adnan",
+        firstname: "Mylène",
+        lastname: "Mercier",
         campus: "Lyon",
       },
       {
