@@ -13,9 +13,9 @@ export default function Home() {
           cet exercice va être d&apos;une incroyable facilité...
         </div>
         <div className={style.textHome}>
-          Ce site est la version modèle, pour que vous puissiez vous analyser ce
-          que l&apos;on attend de vous. Ensuite, vous allez cloner le repo à
-          débugger.
+          Ce site est la version modèle, pour que vous puissiezanalyser ce que
+          l&apos;on attend de vous. Ensuite, allez cloner le repo à débugger !!!
+          Lien en bas ;)
         </div>
         <div className={style.textHome}>
           Un fichier seed.js vous permettras d&apos;initialiser une base de
