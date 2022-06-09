@@ -6,6 +6,7 @@ const Form = () => {
   return (
     <Layout>
       <div className={style.formContainer}>
+        <div>AJOUTES DES WILDERS</div>
         <AddWilders />
       </div>
     </Layout>
