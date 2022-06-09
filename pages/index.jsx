@@ -23,14 +23,12 @@ export default function Home() {
           Chasse aux bugs...
         </div>
         <div className={style.textHome}>
-          <Link
-            href={" https://github.com/NycoChavanoud/start-debug-round2"}
-            passHref
+          <a
+            href=" https://github.com/NycoChavanoud/start-debug-round2"
+            target="_blank"
           >
-            <a target="_blank">
-              https://github.com/NycoChavanoud/start-debug-round2
-            </a>
-          </Link>
+            https://github.com/NycoChavanoud/start-debug-round2
+          </a>
         </div>
       </div>
     </Layout>
