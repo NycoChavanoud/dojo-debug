@@ -5,13 +5,13 @@ const Header = () => {
   return (
     <div className={style.headerContainer}>
       <Link href={"/"}>
-        <div className={style.linkHeader}>LIST</div>
+        <div className={style.linkHeader}>ACCUEIL</div>
       </Link>
       <Link href={"/form"}>
         <div className={style.linkHeader}>FORM</div>
       </Link>
-      <Link href={"/"}>
-        <div className={style.linkHeader}>on sais pas encore</div>
+      <Link href={"/studentList"}>
+        <div className={style.linkHeader}>LIST</div>
       </Link>
     </div>
   );

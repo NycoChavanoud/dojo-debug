@@ -2,7 +2,7 @@ import style from "../../styles/Form.module.css";
 import Layout from "../../components/Layout";
 import AddWilders from "../../components/AddWilders";
 
-const index = () => {
+const Form = () => {
   return (
     <Layout>
       <div className={style.formContainer}>
@@ -12,4 +12,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Form;

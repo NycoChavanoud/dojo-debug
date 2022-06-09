@@ -11,3 +11,10 @@ datasource db {
   url                  = env("DATABASE_URL")
   referentialIntegrity = "prisma"
 }
+
+model Student {
+  id        String  @id @default(cuid())
+  firstname String?
+  lastname  String?
+  campus    String?
+}

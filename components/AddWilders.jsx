@@ -6,8 +6,7 @@ import style from "./style/AddUserForm.module.css";
 const AddWilders = () => {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
-  const [city, setCity] = useState("");
-  const [description, setDescription] = useState("");
+  const [campus, setCampus] = useState("");
 
   const router = useRouter();
 
@@ -60,30 +59,19 @@ const AddWilders = () => {
         maxLength={40}
       />
 
-      <label htmlFor="city" className={style.labelForm}>
+      <label htmlFor="campus" className={style.labelForm}>
         Campus :{" "}
       </label>
       <input
         type="text"
-        id="city"
+        id="campus"
         className={style.inputForm}
         required
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
+        value={campus}
+        onChange={(e) => setCampus(e.target.value)}
         maxLength={40}
       />
 
-      <label htmlFor="description" className={style.labelForm}>
-        Description
-      </label>
-      <textarea
-        id="description"
-        className={style.textareaForm}
-        autoComplete="off"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-        required
-      />
       <button className={style.btnForm}>Valider</button>
     </form>
   );
