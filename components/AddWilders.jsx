@@ -23,7 +23,6 @@ const AddWilders = () => {
         console.error(err);
       });
   };
-  console.log(firstname, lastname, campus);
 
   return (
     <form className={style.formContainer} onSubmit={handleCreateStudent}>
