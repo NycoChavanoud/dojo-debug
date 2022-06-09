@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Layout from "../components/Layout";
 import style from "../styles/Home.module.css";
 
@@ -20,6 +21,16 @@ export default function Home() {
           Un fichier seed.js vous permettras d&apos;initialiser une base de
           données avec les bonnes informations de départ... Let&apos;s go...
           Chasse aux bugs...
+        </div>
+        <div className={style.textHome}>
+          <Link
+            href={" https://github.com/NycoChavanoud/start-debug-round2"}
+            passHref
+          >
+            <a target="_blank">
+              https://github.com/NycoChavanoud/start-debug-round2
+            </a>
+          </Link>
         </div>
       </div>
     </Layout>
