@@ -30,6 +30,7 @@ const StudentList = () => {
               firstname={user.firstname}
               lastname={user.lastname}
               campus={user.campus}
+              id={user.id}
             />
             <button
               className={style.deleteBtn}

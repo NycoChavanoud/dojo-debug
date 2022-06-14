@@ -13,10 +13,29 @@ module.exports.getStudents = () =>
     },
   });
 
+module.exports.getOneStudent = (id) => {
+  return db.student.findUnique({
+    where: { id },
+  });
+};
+
 module.exports.deleteOneStudent = (id) => {
   return db.student.delete({
     where: {
       id,
     },
   });
+};
+
+module.exports.patchOneStudent = async (data) => {
+  return await db.student
+    .update({
+      where: { id: data.id },
+      data: {
+        firstname: data.firstname,
+        lastname: data.lastname,
+        campus: data.campus,
+      },
+    })
+    .catch((_) => false);
 };
